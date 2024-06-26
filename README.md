@@ -1,5 +1,4 @@
-# For frontend folder
-- cd frontend
+# For frontend
 - npm install
 - npm start
 
