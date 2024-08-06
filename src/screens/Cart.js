@@ -11,10 +11,10 @@ export default function Cart() {
       </div>
     )
   }
-  // const handleRemove = (index)=>{
-  //   console.log(index)
-  //   dispatch({type:"REMOVE",index:index})
-  // }
+  const handleRemove = (index)=>{
+    console.log(index)
+    dispatch({type:"REMOVE",index:index})
+  }
 
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("userEmail");
@@ -41,7 +41,6 @@ export default function Cart() {
   let totalPrice = data.reduce((total, food) => total + food.price, 0)
   return (
     <div>
-
       {console.log(data)}
       <div className='container m-auto mt-5 table-responsive  table-responsive-sm table-responsive-md' >
         <table className='table table-hover '>
@@ -72,9 +71,6 @@ export default function Cart() {
           <button className='btn bg-success mt-5 ' onClick={handleCheckOut} > Check Out </button>
         </div>
       </div>
-
-
-
     </div>
   )
 }
