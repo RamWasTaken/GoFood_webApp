@@ -1,23 +1,53 @@
 import React from 'react';
+import { Carousel } from 'react-bootstrap';
 
-export default function Carousel() {
-    return (
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://images.unsplash.com/photo-1660715683691-d1614d1dd361?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1660715683691-d1614d1dd361?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1660715683691-d1614d1dd361?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="..." />
-                </div>
-            </div>
-        </div>
-
-    );
+export default function ImageCarousel() {
+  return (
+    <Carousel controls responsive>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://images.unsplash.com/photo-1552913902-366e726db79e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Image 1"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://images.unsplash.com/photo-1655195672061-90c23e3e8026?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmFzdCUyMGZvb2R8ZW58MHwwfDB8fHww"
+          alt="Image 2"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://images.unsplash.com/photo-1660715683691-d1614d1dd361?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Image 3"
+        />
+      </Carousel.Item>
+    </Carousel>
+  );
 }
+// import React from 'react';
+
+// export default function Carousel() {
+//     return (
+//         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+//             <div class="carousel-inner">
+//                 <div class="carousel-item active">
+//                     <img src="https://images.unsplash.com/photo-1660715683691-d1614d1dd361?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" style={{ width: 500, height: 300, objectFit: 'cover' }} alt="..." />
+//                 </div>
+//                 <div class="carousel-item">
+//                     <img src="https://images.unsplash.com/photo-1660715683691-d1614d1dd361?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" style={{ width: 500, height: 300, objectFit: 'cover' }} alt="..." />
+//                 </div>
+//                 <div class="carousel-item">
+//                     <img src="https://images.unsplash.com/photo-1660715683691-d1614d1dd361?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" style={{ width: 500, height: 300, objectFit: 'cover' }} alt="..." />
+//                 </div>
+//             </div>
+//         </div>
+
+//     );
+// }
 
 // import React from 'react'
 
