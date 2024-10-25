@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.carousel-item {
+  display: flex;
+}
+
+.row {
+  display: flex; /* Flex display for the row of cards */
+  justify-content: center; /* Center align cards */
+}
+
+.col-4 {
+  padding: 0 10px; /* Add some horizontal spacing */
+}
+
+.nav-link:hover, .btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.navbar-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
